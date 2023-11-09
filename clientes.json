@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nome": "aefv",
+        "email": "qwc",
+        "senha": "1221212121",
+        "endereço": {
+            "rua": "Rua Bandeira de Aracambi",
+            "numero": "1",
+            "complemento": "3",
+            "bairro": "Jardim Rodolfo Pirani",
+            "municipio": "São Paulo",
+            "uf": "SP",
+            "cep": "08310010"
+        }
+    },
+    {
+        "id": 1,
+        "nome": "1wwwqd",
+        "email": "qwfdc",
+        "senha": "222222222222",
+        "endereço": {
+            "rua": "Rua Bandeira de Aracambi",
+            "numero": "1",
+            "complemento": "4",
+            "bairro": "Jardim Rodolfo Pirani",
+            "municipio": "São Paulo",
+            "uf": "SP",
+            "cep": "08310010"
+        }
+    }
+]

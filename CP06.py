@@ -1,3 +1,9 @@
+'''
+1- Gabriel Riqueto RM98685
+2- Gabriel Oliveira Rodrigues RM98565 
+3- Lucas Vinicius de Almeida Brigida RM99094 
+'''
+
 import requests
 import json
 import os
@@ -46,7 +52,9 @@ def inserir():
     except ValueError:
         print('ERRO! id tem que ser um número inteiro')
     else:
+        print("-------------")
         print('Cadastro realizado com sucesso!')
+        print("-------------")
 
 #função para alterar os dados de um cliente
 def alternar():
@@ -92,6 +100,7 @@ def alternar():
             with open('clientes.json', 'w', encoding='utf-8') as arquivo:
                 json.dump(lista_clientes, arquivo, indent=4, ensure_ascii=False)
             print(f"As informações do cliente com ID {id_cliente} foram atualizadas.")
+            print("-------------")
         else:
             print(f"Cliente com ID {id_cliente} não encontrado.")
 
@@ -122,6 +131,8 @@ def excluir():
             with open('clientes.json', 'w', encoding='utf-8') as arquivo:
                 json.dump(lista_clientes, arquivo, indent=4, ensure_ascii=False)
             print(f"Cliente com ID {id_cliente} foi excluído com sucesso.")
+            print("-------------")
+            
         else:
             print(f"Cliente com ID {id_cliente} não encontrado.")
 
@@ -158,7 +169,9 @@ def menu():
         print("Opção 3- Excluir")
         print("Opção 4- Consultar")
         print("Opção 0- Sair")
+        print("-------------")
         escolha = input("Escolha uma opção acima: ")
+        print("-------------")
         
         if escolha == '1':
             inserir()
@@ -173,4 +186,5 @@ def menu():
             break 
         else:
             print("Por favor escolha uma opção válida")
+
 menu()
